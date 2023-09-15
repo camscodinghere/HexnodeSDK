@@ -1,0 +1,28 @@
+{
+  "name": "hexnodesdk",
+  "version": "1.0.0",
+  "description": "Unofficial SDK wrapper to access the HexnodeMDM API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmRockit/HexnodeSDK.git"
+  },
+  "keywords": [
+    "hexnode"
+  ],
+  "author": "Cameron Murphy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cmRockit/HexnodeSDK/issues"
+  },
+  "homepage": "https://github.com/cmRockit/HexnodeSDK#readme",
+  "dependencies": {
+    "axios": "^1.5.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
