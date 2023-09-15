@@ -2,9 +2,10 @@
   "name": "hexnodesdk",
   "version": "1.0.0",
   "description": "Unofficial SDK wrapper to access the HexnodeMDM API",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
