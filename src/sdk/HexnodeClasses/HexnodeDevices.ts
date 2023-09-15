@@ -114,7 +114,7 @@ export default class HexnodeDevices {
      * 
      * @returns Response from the Hexnode API
      */
-    listAll(params: object) {
+    listAll(params: object = {}) {
         // @ts-ignore
         return _devices.listAll({apiKey:this.apiKey, portal:this.portal, ...params});
     }

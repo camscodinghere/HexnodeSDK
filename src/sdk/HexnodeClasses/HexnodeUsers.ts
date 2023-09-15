@@ -96,7 +96,7 @@ export default class HexnodeUsers {
      * 
      * @returns Response from the Hexnode API
      */
-    listAll(params: object) {
+    listAll(params: object = {}) {
         // @ts-ignore
         return _users.listAll({apiKey:this.apiKey, portal:this.portal, ...params});
     }
@@ -114,6 +114,6 @@ export default class HexnodeUsers {
      */
     sendEnrollmentRequest(params: object) {
         // @ts-ignore
-        return _users.listAll({apiKey:this.apiKey, portal:this.portal, ...params});
+        return _users.sendEnrollmentRequest({apiKey:this.apiKey, portal:this.portal, ...params});
     }
 }

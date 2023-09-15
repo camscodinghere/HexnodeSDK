@@ -102,7 +102,7 @@ export default class HexnodeDevices {
      *
      * @returns Response from the Hexnode API
      */
-    listAll(params: object): Promise<{
+    listAll(params?: object): Promise<{
         status: any;
         data: any;
     }>;

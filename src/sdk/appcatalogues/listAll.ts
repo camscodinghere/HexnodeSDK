@@ -17,7 +17,7 @@ type Params = {
  * 
  *    portal - Portal name to use for hexnode url
  * 
- *    order_by - Order results by app catalog name (default asc)
+ *    order_by - OPTIONAL Order results by app catalog name (default asc)
  * 
  *    page - OPTIONAL For paginating data, which page to grab
  * 

@@ -7,7 +7,7 @@ export default class HexnodeAppgroups {
      *
      * ------
      *
-     *    order_by - Order results by app name (default asc)
+     *    order_by - OPTIONAL Order results by app group name (default asc)
      *
      *    page - OPTIONAL For paginating data, which page to grab
      *
@@ -15,7 +15,7 @@ export default class HexnodeAppgroups {
      *
      * @returns Response from the Hexnode API
      */
-    listAll(params: object): Promise<{
+    listAll(params?: object): Promise<{
         status: any;
         data: any;
     }>;

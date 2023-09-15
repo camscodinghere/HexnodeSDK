@@ -14,7 +14,7 @@ export default class HexnodeAppcatalogues {
      * 
      * ------
      * 
-     *    order_by - Order results by app name (default asc)
+     *    order_by - OPTIONAL Order results by app name (default asc)
      * 
      *    page - OPTIONAL For paginating data, which page to grab
      * 
@@ -22,7 +22,7 @@ export default class HexnodeAppcatalogues {
      * 
      * @returns Response from the Hexnode API
      */
-    listAll(params: object) {
+    listAll(params: object = {}) {
         // @ts-ignore
         return _appcatalogues.listAll({apiKey:this.apiKey, portal:this.portal, ...params});
     }

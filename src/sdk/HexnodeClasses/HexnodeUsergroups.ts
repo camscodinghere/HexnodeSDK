@@ -20,7 +20,7 @@ export default class HexnodeUsergroups {
      * 
      * @returns Response from the Hexnode API
      */
-    listAll(params: object) {
+    listAll(params: object = {}) {
         // @ts-ignore
         return _usergroups.listAll({apiKey:this.apiKey, portal:this.portal, ...params});
     }

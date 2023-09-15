@@ -26,7 +26,7 @@ export default class HexnodeApps {
      * 
      * @returns Response from the Hexnode API
      */
-    listAll(params: object) {
+    listAll(params: object = {}) {
         // @ts-ignore
         return _apps.listAll({apiKey:this.apiKey, portal:this.portal, ...params});
     }

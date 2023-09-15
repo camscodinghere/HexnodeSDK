@@ -20,7 +20,7 @@ export default class HexnodeDevicegroups {
      * 
      * @returns Response from the Hexnode API
      */
-    listAll(params: object) {
+    listAll(params: object = {}) {
         // @ts-ignore
         return _devicegroups.listAll({apiKey:this.apiKey, portal:this.portal, ...params});
     }
